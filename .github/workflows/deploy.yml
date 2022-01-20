@@ -21,3 +21,4 @@ jobs:
           script: |
             cd terpwebsite
             git pull
+	    cp ./* ../../pub/
