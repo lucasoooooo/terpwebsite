@@ -6,16 +6,16 @@ name: Clone workflow
 on: 
   workflow_dispatch: 
 jobs:
-  jobs_one:
+  job_one:
     name: clone
     runs-on: Ubuntu-latest
     steps:
       - name: testing
-        users: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST}}
+          host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }} 
           password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT}}
+          port: ${{ secrets.PORT }}
           scripts: |
             git clone git@github.com:lucasoooooo/terpwebsite.git
