@@ -22,7 +22,3 @@ jobs:
             cd terpwebsite
             git pull
             cp ./* ../../pub/ -f
-
-=======
-	    cp ./* ../../pub/ -f
->>>>>>> 5c2f07ce020f96443893964bf78f4ba0bbe4b019
